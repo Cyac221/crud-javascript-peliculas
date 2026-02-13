@@ -56,8 +56,8 @@
   function seedIfNeeded() {
     if (!localStorage.getItem(LS_USERS)) {
       write(LS_USERS, [
-        { nombre: 'Admin', usuario: 'admin', password: 'admin123' },
-        { nombre: 'Usuario', usuario: 'usuario', password: '1234' }
+        { nombre: 'admin', usuario: 'admin', password: 'admin123' },
+        { nombre: 'usuario', usuario: 'usuario', password: '1234' }
       ]);
     }
 
@@ -75,13 +75,13 @@
         },
         {
           id: uid(),
-          titulo: 'Interestellar',
+          titulo: 'Joker',
           genero: 'Drama',
-          director: 'Bong Joon-ho',
+          director: 'Todd Phillips',
           ano: 2019,
-          calificacion: 8.6,
-          descripcion: 'Una familia pobre se infiltra en otra.',
-          imagen: 'https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg'
+          calificacion: 8,
+          descripcion: 'Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso',
+          imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOXQnk0-AdfRlISQ1N7mnL148u7ViVrKoK2g&s'
         }
       ]);
     }
